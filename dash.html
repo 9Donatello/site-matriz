@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard de SDV</title>
+    <link rel="stylesheet" href="styledash.css">
+</head>
+
+<body>
+    <header class="container">
+        <a href="index.html">
+        <img src="img/logo.png" alt="Logo da Tecnoly" class="logo">
+        </a>
+        <strong>Dashboard SDV</strong>
+    </header>
+    <main>
+        <form>
+            <div id="dashboard-container">
+            <!--Hierarquia de tabelas
+                table = tabela
+                    table row - tr = linha de tabela
+                         table header = cabeçalho
+                         table data = dado da tabela
+            -->          
+                <table>
+                    <th>Equipamento</th>
+                    <th>Local</th>
+                    <th>Horário de operação</th>
+                    <th>Status</th>
+                    <th>Velocidade</th>
+                </table>
+
+
+            </div><br>
+
+            
+        </form>
+    </main>
+    <script>
+        const savedData = JSON.parse(localStorage.getItem('formdata'));
+
+        // Função para criar um elemento HTML para cada equipamento
+        function createEquipmentElement(data) {
+            // ... seu código para criar os elementos
+        }
+
+        // Função para popular o dashboard
+        function populateDashboard(data) {
+            const dashboardContainer = document.getElementById('dashboard-container');
+            data.forEach(item => {
+                const equipmentElement = createEquipmentElement(item);
+                dashboardContainer.appendChild(equipmentElement);
+            });
+        }
+
+        populateDashboard(savedData);
+    </script>
+</body>
+
+</html>

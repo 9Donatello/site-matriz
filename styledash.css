@@ -1,0 +1,46 @@
+body {
+    background-color: #021941;
+    font-family: Montserrat, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: white; /* Cor do texto */
+    padding: 20px 50px;
+}
+  
+.logo {
+    width: 250px; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+
+header {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    justify-content: space-between;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+tr {
+    background-color: #fff;
+}
+
+th {
+    /*border: 1.5px solid white;*/
+    padding: 8px;
+    color: #fff;
+    background-color: #0098ba;
+    align-items: center;
+}

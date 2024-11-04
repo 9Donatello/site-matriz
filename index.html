@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SDV - Tecnoly</title>
+</head>
+<body>
+    <header>
+        <strong>Sinalização dinâmic de velocidade</strong>
+    </header>
+
+    <main>
+        <form>
+            <label for="equipment">Escolha o equipamento:</label>
+            <select id="equipment" name="equipment">
+                <option value="#">Selecione uma opção</option>
+                <option value="192.168.15.49">SDV001SJC</option>
+                <option value="192.168.15.50">SDV002SJC</option>
+                <option value="192.168.15.51">SDV003SJC</option>
+                <option value="192.168.15.52">SDV004SJC</option>
+                <option value="192.168.15.53">SDV005SJC</option>
+            </select><br>
+
+            <label for="speed">Insira a velocidade padrão:</label>
+            <input type="text" id="defaultSpeed" name="defaultSpeed" maxlength="3" placeholder="de 0 a 120 km/h"><br>
+
+            <div class="checkbox-container">
+                <label for="showDateTime" class="checkbox-label">Definir velocidade no período:</label>
+                <input type="checkbox" id="showDateTime">
+            </div>
+
+            <div id="dateTimeFields" style="display: none;">
+                <label for="startDate">Data e hora de início:</label>
+                <input type="datetime-local" id="startDate">
+                <label for="endDate">Data e hora de término:</label>
+                <input type="datetime-local" id="endDate">
+                <label for="periodSpeed">Velocidade no período:</label>
+                <input type="text" id="periodSpeed" name="periodSpeed" maxlength="3" placeholder="de 0 a 120 km/h">
+            </div><br>
+
+            <button type="submit">Enviar</button>
+
+            <nav class="acess">
+                <a href="dash.html">Acessar Dashboard</a>
+            </nav>
+        </form>
+    </main>
+
+    <footer>
+        <img src="img/logo.png" alt="Logo da Tecnoly">
+        <p class="rodape">Copyright © 2024 Tecnoly – Todos os Direitos Reservados - Clique aqui para ler nossa Política de Privacidade<p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
